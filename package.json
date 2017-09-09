@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "express": "3.12.0",
-	"forever": "v0.14.1"
+    "forever": "^0.14.1"
   },
   "devDependencies": {
     "mocha": "1.20.1",
@@ -14,6 +14,6 @@
   "scripts": {
     "preinstall": "npm i forever",
     "test": "./node_modules/.bin/mocha --recursive -R xunit test/ > test-reports.xml",
-	"launch": "./node_modules/.bin/forever start app.js"
+    "launch": "./node_modules/.bin/forever start app.js"
   }
 }
